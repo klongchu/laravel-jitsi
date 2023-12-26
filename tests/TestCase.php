@@ -1,9 +1,9 @@
 <?php
 
-namespace Amyisme13\LaravelJitsi\Tests;
+namespace Klongchu\LaravelJitsi\Tests;
 
+use Klongchu\LaravelJitsi\LaravelJitsiServiceProvider;
 use Orchestra\Testbench\TestCase as Orchestra;
-use Amyisme13\LaravelJitsi\LaravelJitsiServiceProvider;
 
 class TestCase extends Orchestra
 {

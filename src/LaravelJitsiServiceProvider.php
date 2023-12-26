@@ -1,9 +1,9 @@
 <?php
 
-namespace Amyisme13\LaravelJitsi;
+namespace Klongchu\LaravelJitsi;
 
-use Amyisme13\LaravelJitsi\Http\Controllers\ViewRoomController;
 use Illuminate\Support\ServiceProvider;
+use Klongchu\LaravelJitsi\Http\Controllers\ViewRoomController;
 
 class LaravelJitsiServiceProvider extends ServiceProvider
 {
@@ -16,28 +16,28 @@ class LaravelJitsiServiceProvider extends ServiceProvider
          * Optional methods to load your package assets
          */
         // $this->loadTranslationsFrom(__DIR__.'/../resources/lang', 'laravel-jitsi');
-        $this->loadViewsFrom(__DIR__.'/../resources/views', 'laravel-jitsi');
+        $this->loadViewsFrom(__DIR__ . '/../resources/views', 'laravel-jitsi');
         // $this->loadMigrationsFrom(__DIR__.'/../database/migrations');
         // $this->loadRoutesFrom(__DIR__.'/routes.php');
 
         if ($this->app->runningInConsole()) {
             $this->publishes([
-                __DIR__.'/../config/config.php' => config_path('laravel-jitsi.php'),
+                __DIR__ . '/../config/config.php' => config_path('laravel-jitsi.php'),
             ], 'config');
 
             // Publishing the views.
             $this->publishes([
-                __DIR__.'/../resources/views' => resource_path('views/vendor/laravel-jitsi'),
+                __DIR__ . '/../resources/views' => resource_path('views/vendor/laravel-jitsi'),
             ], 'views');
 
             // Publishing assets.
             /*$this->publishes([
-                __DIR__.'/../resources/assets' => public_path('vendor/laravel-jitsi'),
+            __DIR__.'/../resources/assets' => public_path('vendor/laravel-jitsi'),
             ], 'assets');*/
 
             // Publishing the translation files.
             /*$this->publishes([
-                __DIR__.'/../resources/lang' => resource_path('lang/vendor/laravel-jitsi'),
+            __DIR__.'/../resources/lang' => resource_path('lang/vendor/laravel-jitsi'),
             ], 'lang');*/
 
             // Registering package commands.
@@ -51,7 +51,7 @@ class LaravelJitsiServiceProvider extends ServiceProvider
     public function register()
     {
         // Automatically apply the package configuration
-        $this->mergeConfigFrom(__DIR__.'/../config/config.php', 'laravel-jitsi');
+        $this->mergeConfigFrom(__DIR__ . '/../config/config.php', 'laravel-jitsi');
 
         // Register the main class to use with the facade
         $this->app->singleton('laravel-jitsi', function () {

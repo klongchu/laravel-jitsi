@@ -1,10 +1,10 @@
 <?php
 
-namespace Amyisme13\LaravelJitsi\Http\Controllers;
+namespace Klongchu\LaravelJitsi\Http\Controllers;
 
-use Amyisme13\LaravelJitsi\LaravelJitsiFacade as Jitsi;
 use Illuminate\Http\Request;
 use Illuminate\Routing\Controller;
+use Klongchu\LaravelJitsi\LaravelJitsiFacade as Jitsi;
 
 class ViewRoomController extends Controller
 {

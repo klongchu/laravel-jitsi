@@ -1,11 +1,11 @@
 {
-    "name": "amyisme13/laravel-jitsi",
+    "name": "klongchu/laravel-jitsi",
     "description": "A package to generate view of a Jitsi Meet room using Jitsi Meet IFrame API",
     "keywords": [
-        "amyisme13",
+        "klongchu",
         "laravel-jitsi"
     ],
-    "homepage": "https://github.com/amyisme13/laravel-jitsi",
+    "homepage": "https://github.com/klongchu/laravel-jitsi",
     "license": "MIT",
     "type": "library",
     "authors": [
@@ -27,12 +27,12 @@
     },
     "autoload": {
         "psr-4": {
-            "Amyisme13\\LaravelJitsi\\": "src"
+            "Klongchu\\LaravelJitsi\\": "src"
         }
     },
     "autoload-dev": {
         "psr-4": {
-            "Amyisme13\\LaravelJitsi\\Tests\\": "tests"
+            "Klongchu\\LaravelJitsi\\Tests\\": "tests"
         }
     },
     "scripts": {
@@ -45,10 +45,10 @@
     "extra": {
         "laravel": {
             "providers": [
-                "Amyisme13\\LaravelJitsi\\LaravelJitsiServiceProvider"
+                "Klongchu\\LaravelJitsi\\LaravelJitsiServiceProvider"
             ],
             "aliases": {
-                "LaravelJitsi": "Amyisme13\\LaravelJitsi\\LaravelJitsiFacade"
+                "LaravelJitsi": "Klongchu\\LaravelJitsi\\LaravelJitsiFacade"
             }
         }
     }

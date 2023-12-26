@@ -1,6 +1,6 @@
 <?php
 
-namespace Amyisme13\LaravelJitsi;
+namespace Klongchu\LaravelJitsi;
 
 use Firebase\JWT\JWT;
 use Illuminate\Support\Str;
@@ -50,7 +50,7 @@ class LaravelJitsi
         }
 
         $jwt = null;
-        if (! is_null($user)) {
+        if (!is_null($user)) {
             $jwt = $this->generateJwt($user, $room);
         }
 

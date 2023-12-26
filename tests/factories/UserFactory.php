@@ -1,8 +1,8 @@
 <?php
 
-use Amyisme13\LaravelJitsi\Tests\User;
 use Faker\Generator as Faker;
 use Illuminate\Support\Str;
+use Klongchu\LaravelJitsi\Tests\User;
 
 $factory->define(User::class, function (Faker $faker) {
     return [

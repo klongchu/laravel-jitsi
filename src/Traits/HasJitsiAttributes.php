@@ -1,6 +1,6 @@
 <?php
 
-namespace Amyisme13\LaravelJitsi\Traits;
+namespace Klongchu\LaravelJitsi\Traits;
 
 trait HasJitsiAttributes
 {

@@ -1,15 +1,15 @@
 <?php
 
-namespace Amyisme13\LaravelJitsi\Tests;
+namespace Klongchu\LaravelJitsi\Tests;
 
-use Amyisme13\LaravelJitsi\Http\Controllers\ViewRoomController;
-use Amyisme13\LaravelJitsi\LaravelJitsiFacade;
 use Firebase\JWT\JWT;
+use Klongchu\LaravelJitsi\Http\Controllers\ViewRoomController;
+use Klongchu\LaravelJitsi\LaravelJitsiFacade;
 
 class UnitTest extends TestCase
 {
     /** @test */
-    function testRouteIsAvailable()
+    public function testRouteIsAvailable()
     {
         $routes = $this->app['router']->getRoutes();
         $this->assertTrue((bool) $routes->getByName('jitsi.view-room'));

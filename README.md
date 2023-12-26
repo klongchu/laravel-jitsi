@@ -1,8 +1,8 @@
 # Laravel Jitsi
 
-[![Latest Version on Packagist](https://img.shields.io/packagist/v/amyisme13/laravel-jitsi.svg?style=flat-square)](https://packagist.org/packages/amyisme13/laravel-jitsi)
-[![Build Status](https://img.shields.io/travis/amyisme13/laravel-jitsi/master.svg?style=flat-square)](https://travis-ci.org/amyisme13/laravel-jitsi)
-[![Total Downloads](https://img.shields.io/packagist/dt/amyisme13/laravel-jitsi.svg?style=flat-square)](https://packagist.org/packages/amyisme13/laravel-jitsi)
+[![Latest Version on Packagist](https://img.shields.io/packagist/v/klongchu/laravel-jitsi.svg?style=flat-square)](https://packagist.org/packages/klongchu/laravel-jitsi)
+[![Build Status](https://img.shields.io/travis/klongchu/laravel-jitsi/master.svg?style=flat-square)](https://travis-ci.org/klongchu/laravel-jitsi)
+[![Total Downloads](https://img.shields.io/packagist/dt/klongchu/laravel-jitsi.svg?style=flat-square)](https://packagist.org/packages/klongchu/laravel-jitsi)
 
 A package to generate view of a Jitsi Meet room using Jitsi Meet IFrame API.
 
@@ -23,7 +23,7 @@ If you are self-hosting your Jitsi Meet instance, here are some article that mig
 You can install the package via composer:
 
 ```bash
-composer require amyisme13/laravel-jitsi
+composer require klongchu/laravel-jitsi
 ```
 
 Add these variables to your .env file
@@ -37,10 +37,10 @@ JITSI_APP_ID=
 JITSI_APP_SECRET=
 ```
 
-Add the trait `\Amyisme13\LaravelJitsi\Traits\HasJitsiAttributes` to your **User** model.
+Add the trait `\Klongchu\LaravelJitsi\Traits\HasJitsiAttributes` to your **User** model.
 
 ```php
-use Amyisme13\LaravelJitsi\Traits\HasJitsiAttributes;
+use Klongchu\LaravelJitsi\Traits\HasJitsiAttributes;
 use Illuminate\Notifications\Notifiable;
 use Illuminate\Contracts\Auth\MustVerifyEmail;
 use Illuminate\Foundation\Auth\User as Authenticatable;
@@ -85,7 +85,7 @@ If you discover any security related issues, please email amy.azmim@gmail.com in
 
 ## Credits
 
--   [Azmi Makarima](https://github.com/amyisme13)
+-   [Azmi Makarima](https://github.com/klongchu)
 -   [All Contributors](../../contributors)
 
 ## License

@@ -1,8 +1,8 @@
 <?php
 
-use Amyisme13\LaravelJitsi\Tests\UserOverride;
 use Faker\Generator as Faker;
 use Illuminate\Support\Str;
+use Klongchu\LaravelJitsi\Tests\UserOverride;
 
 $factory->define(UserOverride::class, function (Faker $faker) {
     return [
